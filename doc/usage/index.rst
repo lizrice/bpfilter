@@ -76,7 +76,7 @@ Now that the daemon is up and running, we will use ``bfcli`` to send a filtering
 .. code-block:: bash
 
 	$ sudo bfcli ruleset set --from-str "
-	chain BF_HOOK_NF_LOCAL_OUT policy ACCEPT
+	chain mychain BF_HOOK_NF_LOCAL_OUT ACCEPT
 	    rule
 	        ip4.proto icmp
 	        DROP
